@@ -1,0 +1,27 @@
+@use "../../Styles/coloring" as *;
+
+.copyRow{
+  text-align: center;
+  text-shadow: 0 0 5rem 1px $mint;
+}
+
+.copyright{
+  color: $mint;
+  font-size: 10px;
+  text-align: center;
+  position: absolute;
+  bottom:0px;
+}
+
+.copy-cont{
+  position: absolute;
+  left:10px;
+}
+
+
+.footer{
+  position: fixed;
+  bottom:0;
+  width:100%;
+  box-shadow: 0 50px 5em 1px $black;
+}

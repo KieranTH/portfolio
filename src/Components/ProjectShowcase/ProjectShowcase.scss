@@ -1,0 +1,55 @@
+@use "../../Styles/coloring" as *;
+
+.projects{
+  display: inline-block;
+  padding: 50px;
+  position: relative;
+  //top: 300px;
+  left: 0;
+  width: 95%;
+  text-align: center;
+  color: $easyWhite;
+}
+
+.project-showcase{
+  display: inline-block;
+}
+
+.project-item{
+  display: inline-block;
+  border-style: solid;
+  border-radius: 0.25rem;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 5px 10px 0.8em 0 $black;
+}
+
+.project-item:hover{
+  transition: 150ms ease-in;
+  box-shadow: 5px 10px 1em 0 #7F7F7F;
+  //cursor: pointer;
+}
+
+.project-img{
+  width: 500px;
+  height: 300px;
+}
+
+.discordLogo{
+  height:50px;
+  width: 50px;
+}
+
+.Logo{
+  height: 50px;
+  width: 50px;
+}
+
+#node{
+  width: 100px;
+}
+
+.project-item-desc{
+  width:400px;
+  height:160px;
+}

@@ -1,0 +1,20 @@
+@use "../../Styles/coloring" as *;
+
+.titleName{
+  font-size: 4rem;
+  display: inline-block;
+  color: $mint;
+  position: relative;
+  text-align: center;
+  //width: 100%;
+  left:0;
+  border-bottom: 3px solid;
+  border-spacing: 100px;
+  text-shadow: 0 0 1.5rem $niceBlue;
+  //box-shadow: 0px 35px 0.5em 0.2px $black;
+}
+
+
+.title{
+  width: 100%;
+}
