@@ -1,0 +1,30 @@
+:root{
+  --footer-color: #43455C;
+}
+
+/* ===== FOOTER =====*/
+.footer{
+    background-color: var(--footer-color);
+    color: #fff;
+    text-align: center;
+    font-weight: var(--font-semi);
+    padding: 2rem 0;
+
+    &__title{
+        font-size: 2rem;
+        margin-bottom: var(--mb-4);
+    }
+    &__social{
+        margin-bottom: var(--mb-4);
+    }
+    &__icon{
+        font-size: 1.5rem;
+        color: #fff;
+        margin: 0 var(--mb-2);
+    }
+}
+
+.dark-mode{
+  //--- can change if needed, as default is same colour ---
+  --footer-color: #43455C;
+}
