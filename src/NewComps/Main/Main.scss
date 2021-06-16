@@ -31,6 +31,7 @@ img{
     display: block; // borra los espacios en blanco
 }
 
+
 /*===== HOME =====*/
 .home{
     height: calc(100vh - 3rem);
@@ -253,13 +254,53 @@ img{
     @media screen and(min-width: 768px)
     {
       font-size: 1rem;
+      //--- calculating the width for the text given a 50px space either side, ie. the 100px and then moving the text to the right 50px.
+      width: calc(100vw - (100vw - 1024px) - 100px);
+      position: relative;
+      left: 50px;
+    }
+    & a, a:link, a:visited, a:focus, a:active{
+        text-decoration: none;
+        color: var(--second-color);
+    }
+
+    /*@media screen and (min-width: 1280px){
+      font-size: 1rem;
       width: calc(40vw - 3rem);
       position: relative;
       left: calc(10vw - 3rem);
     }
+
+    @media screen and (min-width: 1440px)
+    {
+      font-size: 1rem;
+      width: calc(60vw - 3rem);
+      position: relative;
+      left: calc(10vw - 3rem);
+    }
+
+    @media screen and (min-width: 1920px){
+      font-size: 1rem;
+      width: calc(25vw - 3rem);
+      position: relative;
+      left: calc(10vw - 3rem);
+    }*/
+
+
+
+    /*@media screen and(min-width: 1440px)
+    {
+      font-size: 1rem;
+      width: calc(60vw - 3rem);
+      position: relative;
+      left: calc(10vw - 3rem);
+    }*/
     //width: 100px;//calc(100vw- 3rem);
     //width: calc(70vw - 3rem);
 
+  }
+  &__clickable{
+    color: inherit;
   }
 
   &__clickable:visited{
