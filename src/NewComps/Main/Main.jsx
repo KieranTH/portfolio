@@ -172,6 +172,7 @@ render(){
 
                 <div class="projects__container">
                   <div class="projects__center">
+                  <a href="https://github.com/KieranTH/NHSFinder" class="project__clickable">
                     <div class="project__area" id="nhsfinder">
                       <div class="project__header">
                         <h2 class="project__title">NHS Location Finder</h2>
@@ -187,7 +188,9 @@ render(){
                           <a href="https://github.com/KieranTH/NHSFinder" class="nav__social-icon"><i class='bx bxl-github bx-md bx-tada-hover'></i></a>
                       </div>
                     </div>
+                  </a>
 
+                  <a href="https://github.com/KieranTH/Social-Bot" class="project__clickable">
                     <div class="project__area" id="discord">
                       <div class="project__header">
                         <h2 class="project__title">Discord Social Bot</h2>
@@ -203,7 +206,9 @@ render(){
                           <a href="https://github.com/KieranTH/Social-Bot" class="nav__social-icon"><i class='bx bxl-github bx-md bx-tada-hover'></i></a>
                       </div>
                     </div>
+                  </a>
 
+                  <a href="https://github.com/KieranTH/Scraper" class="project__clickable">
                     <div class="project__area" id="scraper">
                       <div class="project__header">
                         <h2 class="project__title">Web Scraper</h2>
@@ -220,7 +225,9 @@ render(){
                           <a href="https://github.com/KieranTH/Scraper" class="nav__social-icon"><i class='bx bxl-github bx-md bx-tada-hover'></i></a>
                       </div>
                     </div>
+                  </a>
 
+                  <a href="https://github.com/KieranTH/PPTtoPDF" class="project__clickable">
                     <div class="project__area" id="ppt">
                       <div class="project__header">
                         <h2 class="project__title">PowerPoint to PDF Converter</h2>
@@ -239,6 +246,7 @@ render(){
                           <a href="https://github.com/KieranTH/PPTtoPDF" class="nav__social-icon"><i class='bx bxl-github bx-md bx-tada-hover'></i></a>
                       </div>
                     </div>
+                  </a>
 
                   </div>
                 </div>
