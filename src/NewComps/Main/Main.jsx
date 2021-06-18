@@ -10,6 +10,7 @@ import skillsIcon from '../../Assets/Images/skills2.png';
 
 import ScrollReveal from 'scrollreveal';
 
+
 class Main extends React.Component{
 
 //--- running vanilla JS to create scroll effect from ScrollReveal ---
@@ -254,15 +255,13 @@ render(){
             </section>
 
             <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
+                <h2 class="section-title">Contact Me</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input"/>
-                        <input type="mail" placeholder="Email" class="contact__input"/>
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Submit" class="contact__button button"/>
-                    </form>
+                  <div class="email__container">
+                    <a href="mailto:kieran.hughes2@live.co.uk" class="email__link"><i class='bx bx-mail-send bx-md email__icon'></i><h3 class="email__text">Kieran.hughes2@live.co.uk</h3>
+                    <input type="button" value="Send an E-mail!" class="email__button button"/></a>
+                  </div>
                 </div>
             </section>
         </main>
