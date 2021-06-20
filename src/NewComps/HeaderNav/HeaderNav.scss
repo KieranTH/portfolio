@@ -11,6 +11,7 @@
     --second-color: #0E2431;
     --back-color: #fff;
     --burger-menu-color: #3C3F58;
+    
 }
 
 /*===== Fuente y tipografia =====*/
@@ -67,7 +68,9 @@ body{
   //--back-color: #2E3047;
 
   //--- dark mode colour for menu --- current same as default ---
-  --burger-menu-color: #3C3F58;
+  //--burger-menu-color: #3C3F58;
+  //--back-color: #2E3047;
+  //transition: 1s;
 }
 
 a {
@@ -129,6 +132,7 @@ img{
     z-index: var(--z-fixed);
     background-color: var(--back-color);
     box-shadow: 0 1px 4px rgba(146,161,176,.15);
+    transition: 0.5s;
 }
 
 .nav{
@@ -202,6 +206,12 @@ img{
       position: relative;
       padding-left: 10px;
       &:hover{
+        color: var(--first-color);
+      }
+    }
+
+    &__dark{
+      :hover{
         color: var(--first-color);
       }
     }

@@ -6,6 +6,7 @@
     --input-color: #fff;
 
     --icon-filter: none;
+
 }
 
 body{
@@ -23,6 +24,8 @@ body{
   --input-color: #2E3047;
 
   --icon-filter: invert(96%) sepia(4%) saturate(1612%) hue-rotate(184deg) brightness(93%) contrast(91%);
+
+  transition: 0.5s;
 }
 
 img{

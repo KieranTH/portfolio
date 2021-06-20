@@ -90,14 +90,14 @@ render(){
                         <h2 class="skills__subtitle">Development Skills</h2>
                         <p class="skills__text">Within my Degree study, the main scope within learning was using Object Oritentated Programming. This is where my developed skills for languages such as Java, C, C# and C++ come from.
                         Due to this my favoured form of programming is within OOP and developing applications based around this paradigm. I have also honed similar skills by spending time on "side-projects", either creating standalone applications
-                        using NodeJS or Python, or by creating websites such as this by using technologies such as a JavaScript framework: React.
+                        using JavaScript (NodeJS) or Python, or by creating websites such as this by using technologies such as a React.js.
                         <br></br>
                         <br></br>
                         I also have experience within areas such as Data Management, by developing and maintaining Databases within MySQL. This is mainly attached to work that was conducted during my degree, but has enabled me to use platforms such as XAMPP to host local
                         applications through Apache (Web) front-end and MySQL (Database) back-end, for a full-stack experience.
                         <br></br>
                         <br></br>
-                        Below is a Skill-Chart that represents my strength within each language.
+                        Below is a Skill-Chart that represents my strength within each language and experience derived from previous projects.
                         </p>
                         <div class="skills__data">
                             <div class="skills__names">
@@ -126,7 +126,7 @@ render(){
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class="bx bxl-nodejs skills__icon"></i>
-                                <span class="skills__name">JAVASCRIPT / NODEJS / React</span>
+                                <span class="skills__name">JavaScript / NodeJS / React</span>
                             </div>
                             <div class="skills__bar skills__js">
 
@@ -150,7 +150,7 @@ render(){
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">Web - HTML / CSS / JS</span>
+                                <span class="skills__name">Web - HTML / CSS</span>
                             </div>
                             <div class="skills__bar skills__html">
 
