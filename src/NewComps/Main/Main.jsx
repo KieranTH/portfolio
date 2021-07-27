@@ -10,6 +10,8 @@ import skillsIcon from '../../Assets/Images/skills2.png';
 
 import ScrollReveal from 'scrollreveal';
 
+import ProjectSection from './ProjectSection';
+
 
 class Main extends React.Component{
 
@@ -173,81 +175,36 @@ render(){
 
                 <div class="projects__container">
                   <div class="projects__center">
-                  <a href="https://github.com/KieranTH/NHSFinder" class="project__clickable">
-                    <div class="project__area" id="nhsfinder">
-                      <div class="project__header">
-                        <h2 class="project__title">NHS Location Finder</h2>
-                      </div>
-                      <div class="project__info">
-                      <p class="project__subtitle">Brief Desc:</p>
-                      <p class="project__desc">Java based application to return all NHS Registered Facilities within a given radius. Built using JFRame, Apache POI-HSSF and packaged using Maven.
-                      <br></br><br></br> Due to packaged nature of application, please use Maven or similar dependancy manager to import all necessary libraries. Program is set as JAR export for future reference.
-                      </p>
-                      </div>
-                      <div class="burger">
-                        <a href="javascript:void(0);" class="burgerIcon" onclick="openMenu()"/>
-                          <a href="https://github.com/KieranTH/NHSFinder" class="nav__social-icon"><i class='bx bxl-github bx-md bx-tada-hover'></i></a>
-                      </div>
-                    </div>
-                  </a>
 
-                  <a href="https://github.com/KieranTH/Social-Bot" class="project__clickable">
-                    <div class="project__area" id="discord">
-                      <div class="project__header">
-                        <h2 class="project__title">Discord Social Bot</h2>
-                      </div>
-                      <div class="project__info">
-                      <p class="project__subtitle">Brief Desc:</p>
-                      <p class="project__desc">This Discord bot is built using Java and implementes the Discord API. This application is built using Maven to implement all
-                      the needed dependancies, such as JDA (Java API handler for Discord).<br></br><br></br>For personal use please read the given Documentation within the repo. This gives a brief overlook and implementation guide.
-                      </p>
-                      </div>
-                      <div class="burger">
-                        <a href="javascript:void(0);" class="burgerIcon" onclick="openMenu()"/>
-                          <a href="https://github.com/KieranTH/Social-Bot" class="nav__social-icon"><i class='bx bxl-github bx-md bx-tada-hover'></i></a>
-                      </div>
-                    </div>
-                  </a>
+                  <ProjectSection name="NHS Location Finder"
+                  desc1="Java based application to return all NHS Registered Facilities within a given radius. Built using JFRame, Apache POI-HSSF and packaged using Maven."
+                  desc2="Due to packaged nature of application, please use Maven or similar dependancy manager to import all necessary libraries. Program is set as JAR export for future reference."
+                  github="NHSFinder"/>
 
-                  <a href="https://github.com/KieranTH/Scraper" class="project__clickable">
-                    <div class="project__area" id="scraper">
-                      <div class="project__header">
-                        <h2 class="project__title">Web Scraper</h2>
-                      </div>
-                      <div class="project__info">
-                      <p class="project__subtitle">Brief Desc:</p>
-                      <p class="project__desc">Web Scraper built using NodeJS, uses CLI and integrates directly with Discord 3rd Party Amazon alert server.
-                      <br></br><br></br>
-                      Initially built during the Covid-19 GPU shortage, meaning direct use of Discord API for "re-stocking" alerts. Can also be used directly for scraping and purchasing any product on Amazon.
-                      </p>
-                      </div>
-                      <div class="burger">
-                        <a href="javascript:void(0);" class="burgerIcon" onclick="openMenu()"/>
-                          <a href="https://github.com/KieranTH/Scraper" class="nav__social-icon"><i class='bx bxl-github bx-md bx-tada-hover'></i></a>
-                      </div>
-                    </div>
-                  </a>
+                  <ProjectSection name="Crime Rate Checker - Police API"
+                  desc1="React based website which displays crime statistics from the UK Police API for a given area."
+                  desc2="Uses REST API methods for retrieving data from API, and parses all collected data for dynamic use within the website."
+                  github="policeapi"/>
 
-                  <a href="https://github.com/KieranTH/PPTtoPDF" class="project__clickable">
-                    <div class="project__area" id="ppt">
-                      <div class="project__header">
-                        <h2 class="project__title">PowerPoint to PDF Converter</h2>
-                      </div>
-                      <div class="project__info">
-                      <p class="project__subtitle">Brief Desc:</p>
-                      <p class="project__desc">Java application based on converting any valid PowerPoint to a full PDF. Done by using
-                      the Aspose API for convertingfiles. The UI is handled by Java with the use of the JFrame framework.
-                      <br></br><br></br>
-                      The application has OS selections depending on Thread usage. Meaning the program can be used efficiently on
-                      most systems.
-                      </p>
-                      </div>
-                      <div class="burger">
-                        <a href="javascript:void(0);" class="burgerIcon" onclick="openMenu()"/>
-                          <a href="https://github.com/KieranTH/PPTtoPDF" class="nav__social-icon"><i class='bx bxl-github bx-md bx-tada-hover'></i></a>
-                      </div>
-                    </div>
-                  </a>
+                  <ProjectSection name="Discord Social Bot"
+                  desc1="This Discord bot is built using Java and implementes the Discord API. This application is built using Maven to implement all the needed dependancies, such as JDA (Java API handler for Discord)."
+                  desc2="For personal use please read the given Documentation within the repo. This gives a brief overlook and implementation guide."
+                  github="Social-Bot"/>
+
+                  <ProjectSection name="Web Scraper"
+                  desc1="Web Scraper built using NodeJS, uses CLI and integrates directly with Discord 3rd Party Amazon alert server."
+                  desc2="Initially built during the Covid-19 GPU shortage, meaning direct use of Discord API for 're-stocking' alerts. Can also be used directly for scraping and purchasing any product on Amazon."
+                  github="Scraper"/>
+
+                  <ProjectSection name="PowerPoint to PDF Converter"
+                  desc1="Java application based on converting any valid PowerPoint to a full PDF. Done by using the Aspose API for converting files. The UI is handled by Java with the use of the JFrame framework."
+                  desc2="The application has OS selections depending on Thread usage. Meaning the program can be used efficiently on most systems."
+                  github="PPTtoPDF"/>
+
+                  <ProjectSection name="Virtual Reality - Unity Project"
+                  desc1="VR Immersive environment built using Unity and the Oculus SDK. Used to create an intutive and immersive learning experience and to demonstrate learning improvements compared to current state of learning. Built using C# and contains assets from Blender and the Unity asset store."
+                  desc2="Built as 3rd year university project and used within final year dissertation. Github repo contains all source code - .gitignore is used to reduce clutter - project can be exported to .exe format."
+                  github="LearningVR"/>
 
                   </div>
                 </div>
