@@ -27,7 +27,7 @@ class Main extends React.Component{
 
     /*SCROLL HOME*/
     sr.reveal('.home__title',{});
-    sr.reveal('.button',{delay: 200});
+    sr.reveal('#title__button',{delay: 200});
     //sr.reveal('.home__img',{delay: 400});
     //sr.reveal('.home__social-icon',{ interval: 200});
 
@@ -63,7 +63,7 @@ render(){
                 <div class="home__data">
                     <h1 class="home__title">Hi,<br></br>I'm <span class="home__title-color">Kieran Hughes</span><span>,</span><br></br>Graduate Software Developer</h1>
 
-                    <a href="#contact" class="button">Contact</a>
+                    <a href="#contact" class="button" id="title__button">Contact</a>
                 </div>
             </section>
 
