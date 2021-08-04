@@ -48,7 +48,7 @@ class App extends React.Component {
 
   handleSetLanguage(){
     var language = this.state.lang;
-    console.log(language);
+    //console.log(language);
     if(language === enLang)
     {
       console.log("cy");
@@ -71,6 +71,7 @@ class App extends React.Component {
 
 
   render(){
+  console.log("in render ", this.state.lang.header);
     return (
       <div className="App">
         <HeaderNav language={this.state.lang.header} handleSetLanguage={this.handleSetLanguage.bind(this)}/>

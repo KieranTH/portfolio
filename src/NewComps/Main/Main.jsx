@@ -21,7 +21,7 @@ class Main extends React.Component{
     this.state = {
       langFromParent: this.props.language
     }
-    console.log(this.state.langFromParent);
+    //console.log(this.state.langFromParent);
   }
 
 //--- running vanilla JS to create scroll effect from ScrollReveal ---
@@ -62,33 +62,33 @@ class Main extends React.Component{
     //--- dark mode ---
   }
 
-componentDidUpdate(){
-  this.state.langFromParent = this.props.language;
-}
+// componentDidUpdate(){
+//   this.state.langFromParent = this.props.language;
+// }
 
 
 
 render(){
   return(
-    <main class="l-main">
+    <main class="l-main" key={this.props.language}>
             <section class="home bd-grid" id="home">
                 <div class="home__data">
-                    <h1 class="home__title">{this.state.langFromParent.intro.welcome},<br></br>{this.state.langFromParent.intro.prename} <span class="home__title-color">Kieran Hughes</span><span> {this.state.langFromParent.intro.postname},</span><br></br>{this.state.langFromParent.intro.dev}</h1>
+                    <h1 class="home__title">{this.props.language.intro.welcome},<br></br>{this.props.language.intro.prename} <span class="home__title-color">Kieran Hughes</span><span> {this.props.language.intro.postname},</span><br></br>{this.props.language.intro.dev}</h1>
 
-                    <a href="#contact" class="button" id="title__button">{this.state.langFromParent.intro.contact}</a>
+                    <a href="#contact" class="button" id="title__button">{this.props.language.intro.contact}</a>
                 </div>
             </section>
 
 
             <section class="about section " id="about">
-                <h2 class="section-title">{this.state.langFromParent.about.title}</h2>
+                <h2 class="section-title">{this.props.language.about.title}</h2>
                 <div class="about__container bd-grid">
                     <div class="about__img">
                       <img src={userIcon} alt=""/>
                     </div>
                     <div>
-                        <h2 class="about__subtitle">{this.state.langFromParent.about.name}</h2>
-                        <p class="about__text">{this.state.langFromParent.about.desc1}<br></br>{this.state.langFromParent.about.desc2}
+                        <h2 class="about__subtitle">{this.props.language.about.name}</h2>
+                        <p class="about__text">{this.props.language.about.desc1}<br></br>{this.props.language.about.desc2}
                         </p>
                     </div>
                 </div>
@@ -96,18 +96,18 @@ render(){
 
 
             <section class="skills section" id="skills">
-                <h2 class="section-title">{this.state.langFromParent.skills.title}</h2>
+                <h2 class="section-title">{this.props.language.skills.title}</h2>
 
                 <div class="skills__container bd-grid">
                     <div>
-                        <h2 class="skills__subtitle">{this.state.langFromParent.skills.name}</h2>
-                        <p class="skills__text">{this.state.langFromParent.skills.desc1}
+                        <h2 class="skills__subtitle">{this.props.language.skills.name}</h2>
+                        <p class="skills__text">{this.props.language.skills.desc1}
                         <br></br>
                         <br></br>
-                        {this.state.langFromParent.skills.desc2}
+                        {this.props.language.skills.desc2}
                         <br></br>
                         <br></br>
-                        {this.state.langFromParent.skills.desc2}
+                        {this.props.language.skills.desc2}
                         </p>
                         <div class="skills__data">
                             <div class="skills__names">
@@ -179,39 +179,39 @@ render(){
 
 
             <section class="projects section bd-grid" id="projects">
-                <h2 class="section-title">{this.state.langFromParent.projects[0][0].title}</h2>
+                <h2 class="section-title">{this.props.language.projects[0][0].title}</h2>
 
                 <div class="projects__container">
                   <div class="projects__center">
 
-                  <ProjectSection name={this.state.langFromParent.projects[1][0].data}
-                  desc1={this.state.langFromParent.projects[1][1].data}
-                  desc2={this.state.langFromParent.projects[1][2].data}
+                  <ProjectSection name={this.props.language.projects[1][0].data}
+                  desc1={this.props.language.projects[1][1].data}
+                  desc2={this.props.language.projects[1][2].data}
                   github="NHSFinder"/>
 
-                  <ProjectSection name={this.state.langFromParent.projects[2][0].data}
-                  desc1={this.state.langFromParent.projects[2][1].data}
-                  desc2={this.state.langFromParent.projects[2][2].data}
+                  <ProjectSection name={this.props.language.projects[2][0].data}
+                  desc1={this.props.language.projects[2][1].data}
+                  desc2={this.props.language.projects[2][2].data}
                   github="policeapi"/>
 
-                  <ProjectSection name={this.state.langFromParent.projects[3][0].data}
-                  desc1={this.state.langFromParent.projects[3][1].data}
-                  desc2={this.state.langFromParent.projects[3][2].data}
+                  <ProjectSection name={this.props.language.projects[3][0].data}
+                  desc1={this.props.language.projects[3][1].data}
+                  desc2={this.props.language.projects[3][2].data}
                   github="Social-Bot"/>
 
-                  <ProjectSection name={this.state.langFromParent.projects[4][0].data}
-                  desc1={this.state.langFromParent.projects[4][1].data}
-                  desc2={this.state.langFromParent.projects[4][2].data}
+                  <ProjectSection name={this.props.language.projects[4][0].data}
+                  desc1={this.props.language.projects[4][1].data}
+                  desc2={this.props.language.projects[4][2].data}
                   github="Scraper"/>
 
-                  <ProjectSection name={this.state.langFromParent.projects[5][0].data}
-                  desc1={this.state.langFromParent.projects[5][1].data}
-                  desc2={this.state.langFromParent.projects[5][2].data}
+                  <ProjectSection name={this.props.language.projects[5][0].data}
+                  desc1={this.props.language.projects[5][1].data}
+                  desc2={this.props.language.projects[5][2].data}
                   github="PPTtoPDF"/>
 
-                  <ProjectSection name={this.state.langFromParent.projects[6][0].data}
-                  desc1={this.state.langFromParent.projects[6][1].data}
-                  desc2={this.state.langFromParent.projects[6][2].data}
+                  <ProjectSection name={this.props.language.projects[6][0].data}
+                  desc1={this.props.language.projects[6][1].data}
+                  desc2={this.props.language.projects[6][2].data}
                   github="LearningVR"/>
 
                   </div>
@@ -220,12 +220,12 @@ render(){
             </section>
 
             <section class="contact section" id="contact">
-                <h2 class="section-title">{this.state.langFromParent.contact.title}</h2>
+                <h2 class="section-title">{this.props.language.contact.title}</h2>
 
                 <div class="contact__container bd-grid">
                   <div class="email__container">
                     <a href="mailto:kieran.hughes2@live.co.uk" class="email__link"><i class='bx bx-mail-send bx-md email__icon'></i><h3 class="email__text">Kieran.hughes2@live.co.uk</h3>
-                    <input type="button" value={this.state.langFromParent.contact.button} class="email__button button"/></a>
+                    <input type="button" value={this.props.language.contact.button} class="email__button button"/></a>
                   </div>
                 </div>
             </section>

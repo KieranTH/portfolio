@@ -81,15 +81,17 @@ componentDidMount(){
 
 }
 
-componentDidUpdate(){
-  this.state.langFromParent = this.props.language;
-}
+// componentDidUpdate(){
+//   this.state.langFromParent = this.props.language;
+//   console.log(this.state.langFromParent);
+// }
+
 
 
 
 render(){
   return(
-    <header class="l-header">
+    <header class="l-header" key={this.props.language}>
             <nav class="nav bd-grid">
                 <div>
                     <a href="#" class="nav__logo">Kieran</a>
@@ -97,11 +99,11 @@ render(){
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">{this.state.langFromParent[0].data}</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">{this.state.langFromParent[1].data}</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">{this.state.langFromParent[2].data}</a></li>
-                        <li class="nav__item"><a href="#projects" class="nav__link">{this.state.langFromParent[3].data}</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">{this.state.langFromParent[4].data}</a></li>
+                        <li class="nav__item"><a href="#home" class="nav__link active">{this.props.language[0].data}</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">{this.props.language[1].data}</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">{this.props.language[2].data}</a></li>
+                        <li class="nav__item"><a href="#projects" class="nav__link">{this.props.language[3].data}</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">{this.props.language[4].data}</a></li>
                     </ul>
                 </div>
                 <div class="nav__icons" id="nav-icons">
@@ -115,7 +117,7 @@ render(){
                   <i class="bx bx-moon" id="darkmodeToggle"></i>
                 </div>
 
-                <div className="nav__icons">
+                <div className="nav__translate">
                   <FontAwesomeIcon icon={faGlobeEurope} className="translate__icon" onClick={this.props.handleSetLanguage}/>
                 </div>
 
