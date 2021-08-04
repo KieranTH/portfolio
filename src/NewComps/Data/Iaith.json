@@ -1,0 +1,121 @@
+{
+  "header": [
+    {
+      "data": "Cartref"
+    },
+    {
+      "data": "Am y fi"
+    },
+    {
+      "data": "Sgiliau"
+    },
+    {
+      "data": "Projectau"
+    },
+    {
+      "data": "Cysulltu"
+    }
+  ],
+  "main": {
+    "intro": {
+      "welcome": "Helo",
+      "prename": "",
+      "postname": "ydw i",
+      "dev": "Datblygwr Technoleg Digidol",
+      "contact": "Cysulltu"
+    },
+    "about": {
+      "title": "Am y fi",
+      "name": "Kieran ydw i",
+      "desc1": "Rwy'n ddatblygwr technoleg digidol ac yn ddiweddar rwyf wedi graddio o Brifysgol Bangor gyda BSc mewn Gwyddoniaeth Gyfrifiadurol.",
+      "desc2": "Fel y gwelir isod o fewn sgiliau a phrosiectau, nid yw'r gwaith rwyf wedi'i wneud i gyd wedi bod o fewn cyfyngiadau'r Brifysgol. Mae rhai prosiectau rwyf wedi'u cwblhau yn seiliedig naill ai ar geisiadau hobi neu ddatblygu sgiliau."
+    },
+    "skills": {
+      "title": "Sgiliau",
+      "name": "Sgiliau o fewn creu yn digidol",
+      "desc1": "O fewn fy astudiaeth gradd, y prif gwmpas o fewn dysgu oedd defnyddio Rhaglennu Wedi'i Ori gan Wrthrychau. Dyma lle mae fy sgiliau datblygedig ar gyfer ieithoedd fel Java, C, C# a C++ yn dod. Oherwydd hyn, mae fy hoff fath o raglennu o fewn OOP ac yn datblygu ceisiadau sy'n seiliedig ar y paradeim hwn. Rwyf hefyd wedi mireinio sgiliau tebyg drwy dreulio amser ar 'brosiectau ochr', naill ai drwy greu ceisiadau annibynnol gan ddefnyddio JavaScript (NodeJS) neu Python, neu drwy greu gwefannau fel hyn drwy ddefnyddio technolegau fel Ymateb.js.",
+      "desc2": "Mae gen i brofiad hefyd o fewn meysydd fel Rheoli Data, drwy ddatblygu a chynnal Cronfeydd Data o fewn MySQL. Mae hyn wedi'i gysylltu'n bennaf â gwaith a gynhaliwyd yn ystod fy ngradd, ond mae wedi fy ngalluogi i ddefnyddio llwyfannau fel XAMPP i gynnal ceisiadau lleol drwy apache (Gwe) ar y rheng flaen a MySQL (Cronfa Ddata) yn ôl, ar gyfer profiad pentwr llawn.",
+      "desc3": "Isod ceir Siart Sgiliau sy'n cynrychioli fy nghryfder ym mhob iaith a phrofiad sy'n deillio o brosiectau blaenorol."
+    },
+    "projects": [
+      [
+        {
+          "title": "Projectau"
+        }
+      ],
+      [
+        {
+          "data": "Darganfyddwr Lleoliad y GIG"
+        },
+        {
+          "data": "Cais java i ddychwelyd holl Gyfleusterau Cofrestredig y GIG o fewn radiws penodol. Wedi'i adeiladu gan ddefnyddio JFRame, Apache POI-HSSF a'i becynnu gan ddefnyddio Maven."
+        },
+        {
+          "data": "Oherwydd natur pecynnu'r cais, defnyddiwch Maven neu reolwr dibynadwyedd tebyg i fewnforio'r holl lyfrgelloedd angenrheidiol. Rhaglen wedi'i gosod fel allforio JAR er mwyn cyfeirio ati yn y dyfodol"
+        }
+      ],
+      [
+        {
+          "data": "Gwiriwr Cyfradd Troseddu - API yr Heddlu"
+        },
+        {
+          "data": "Gwefan React sy'n dangos ystadegau troseddu o API Heddlu'r DU ar gyfer ardal benodol."
+        },
+        {
+          "data": "Defnyddio dulliau API REST ar gyfer adalw data o API, a dosrannu'r holl ddata a gasglwyd at ddefnydd deinamig o fewn y wefan."
+        }
+      ],
+      [
+        {
+          "data": "Bot Cymdeithasol Disgo"
+        },
+        {
+          "data": "Mae'r bot Discord hwn wedi'i adeiladu gan ddefnyddio Java ac mae'n gweithredu'r API Discord. Mae'r cais hwn wedi'i adeiladu gan ddefnyddio Maven i weithredu'r holl ddibynadwyedd sydd ei angen, megis JDA (triniwr API Java ar gyfer Discord)."
+        },
+        {
+          "data": "I'w ddefnyddio'n bersonol, darllenwch y Dogfennau a roddwyd o fewn yr repo. Mae hyn yn rhoi trosolwg a chanllaw gweithredu byr."
+        }
+      ],
+      [
+        {
+          "data": "Sgrapio'r We"
+        },
+        {
+          "data": "Mae Web Scraper a adeiladwyd gan ddefnyddio NodeJS, yn defnyddio CLI ac yn integreiddio'n uniongyrchol â gweinydd rhybudd 3ydd Parti Amazon."
+        },
+        {
+          "data": "Adeiladwyd yn wreiddiol yn ystod prinder GPU Covid-19, sy'n golygu defnydd uniongyrchol o API Discord ar gyfer rhybuddion 'ailstocio'. Gellir ei ddefnyddio'n uniongyrchol hefyd ar gyfer sgrapio a phrynu unrhyw gynnyrch ar Amazon."
+        }
+      ],
+      [
+        {
+          "data": "PowerPoint i PDF Converter"
+        },
+        {
+          "data": "Cais Java yn seiliedig ar drosi unrhyw PowerPoint dilys i PDF llawn. Wedi'i wneud drwy ddefnyddio'r API Aspose ar gyfer trosi ffeiliau. Mae Java yn ymdrin â'r UI gyda'r defnydd o fframwaith JFrame."
+        },
+        {
+          "data": "Mae gan y cais ddewisiadau OS yn dibynnu ar ddefnydd Thread. Golygu y gellir defnyddio'r rhaglen yn effeithlon ar y rhan fwyaf o systemau."
+        }
+      ],
+      [
+        {
+          "data": "Realiti Rhithwir - Prosiect Undod"
+        },
+        {
+          "data": "Amgylchedd trochi VR wedi'i adeiladu gan ddefnyddio Unity a'r Oculus SDK. Fe'i defnyddir i greu profiad dysgu greddfol a drochi ac i ddangos gwelliannau dysgu o gymharu â'r sefyllfa bresennol o ran dysgu. Wedi'i adeiladu gan ddefnyddio C# ac mae'n cynnwys asedau o Blender a siop asedau Unity."
+        },
+        {
+          "data": "Wedi'i adeiladu fel prosiect prifysgol 3edd flwyddyn a'i ddefnyddio o fewn traethawd hir y flwyddyn olaf. Mae repo Github yn cynnwys yr holl god ffynhonnell - .defnyddir gitignore i leihau annibendod - gellir allforio'r prosiect i'.exe fformat."
+        }
+      ]
+    ],
+    "contact": {
+      "title": "Cysylltwch â mi",
+      "button": "Anfonwch E-bost!"
+    }
+  },
+  "footer": {
+    "copyright": "&#169; 2021 copyright all right reserved"
+  }
+}

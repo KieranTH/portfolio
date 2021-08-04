@@ -15,6 +15,15 @@ import ProjectSection from './ProjectSection';
 
 class Main extends React.Component{
 
+  constructor(props)
+  {
+    super(props);
+    this.state = {
+      langFromParent: this.props.language
+    }
+    console.log(this.state.langFromParent);
+  }
+
 //--- running vanilla JS to create scroll effect from ScrollReveal ---
   componentDidMount(){
     /*===== SCROLL REVEAL ANIMATION =====*/
@@ -53,6 +62,9 @@ class Main extends React.Component{
     //--- dark mode ---
   }
 
+componentDidUpdate(){
+  this.state.langFromParent = this.props.language;
+}
 
 
 
@@ -61,23 +73,22 @@ render(){
     <main class="l-main">
             <section class="home bd-grid" id="home">
                 <div class="home__data">
-                    <h1 class="home__title">Hi,<br></br>I'm <span class="home__title-color">Kieran Hughes</span><span>,</span><br></br>Graduate Software Developer</h1>
+                    <h1 class="home__title">{this.state.langFromParent.intro.welcome},<br></br>{this.state.langFromParent.intro.prename} <span class="home__title-color">Kieran Hughes</span><span> {this.state.langFromParent.intro.postname},</span><br></br>{this.state.langFromParent.intro.dev}</h1>
 
-                    <a href="#contact" class="button" id="title__button">Contact</a>
+                    <a href="#contact" class="button" id="title__button">{this.state.langFromParent.intro.contact}</a>
                 </div>
             </section>
 
 
             <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
+                <h2 class="section-title">{this.state.langFromParent.about.title}</h2>
                 <div class="about__container bd-grid">
                     <div class="about__img">
                       <img src={userIcon} alt=""/>
                     </div>
                     <div>
-                        <h2 class="about__subtitle">I'm Kieran</h2>
-                        <p class="about__text">I'm an avid software developer and have recently graduated from Bangor University with a BSc in Computer Science.<br></br>As seen below within skills and projects,
-                        the work I've conducted has not all been within the constraints of University. Some projects I have completed are based on either hobby or skill developing applications.
+                        <h2 class="about__subtitle">{this.state.langFromParent.about.name}</h2>
+                        <p class="about__text">{this.state.langFromParent.about.desc1}<br></br>{this.state.langFromParent.about.desc2}
                         </p>
                     </div>
                 </div>
@@ -85,21 +96,18 @@ render(){
 
 
             <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
+                <h2 class="section-title">{this.state.langFromParent.skills.title}</h2>
 
                 <div class="skills__container bd-grid">
                     <div>
-                        <h2 class="skills__subtitle">Development Skills</h2>
-                        <p class="skills__text">Within my Degree study, the main scope within learning was using Object Oritentated Programming. This is where my developed skills for languages such as Java, C, C# and C++ come from.
-                        Due to this my favoured form of programming is within OOP and developing applications based around this paradigm. I have also honed similar skills by spending time on "side-projects", either creating standalone applications
-                        using JavaScript (NodeJS) or Python, or by creating websites such as this by using technologies such as a React.js.
+                        <h2 class="skills__subtitle">{this.state.langFromParent.skills.name}</h2>
+                        <p class="skills__text">{this.state.langFromParent.skills.desc1}
                         <br></br>
                         <br></br>
-                        I also have experience within areas such as Data Management, by developing and maintaining Databases within MySQL. This is mainly attached to work that was conducted during my degree, but has enabled me to use platforms such as XAMPP to host local
-                        applications through Apache (Web) front-end and MySQL (Database) back-end, for a full-stack experience.
+                        {this.state.langFromParent.skills.desc2}
                         <br></br>
                         <br></br>
-                        Below is a Skill-Chart that represents my strength within each language and experience derived from previous projects.
+                        {this.state.langFromParent.skills.desc2}
                         </p>
                         <div class="skills__data">
                             <div class="skills__names">
@@ -171,39 +179,39 @@ render(){
 
 
             <section class="projects section bd-grid" id="projects">
-                <h2 class="section-title">Projects</h2>
+                <h2 class="section-title">{this.state.langFromParent.projects[0][0].title}</h2>
 
                 <div class="projects__container">
                   <div class="projects__center">
 
-                  <ProjectSection name="NHS Location Finder"
-                  desc1="Java based application to return all NHS Registered Facilities within a given radius. Built using JFRame, Apache POI-HSSF and packaged using Maven."
-                  desc2="Due to packaged nature of application, please use Maven or similar dependancy manager to import all necessary libraries. Program is set as JAR export for future reference."
+                  <ProjectSection name={this.state.langFromParent.projects[1][0].data}
+                  desc1={this.state.langFromParent.projects[1][1].data}
+                  desc2={this.state.langFromParent.projects[1][2].data}
                   github="NHSFinder"/>
 
-                  <ProjectSection name="Crime Rate Checker - Police API"
-                  desc1="React based website which displays crime statistics from the UK Police API for a given area."
-                  desc2="Uses REST API methods for retrieving data from API, and parses all collected data for dynamic use within the website."
+                  <ProjectSection name={this.state.langFromParent.projects[2][0].data}
+                  desc1={this.state.langFromParent.projects[2][1].data}
+                  desc2={this.state.langFromParent.projects[2][2].data}
                   github="policeapi"/>
 
-                  <ProjectSection name="Discord Social Bot"
-                  desc1="This Discord bot is built using Java and implementes the Discord API. This application is built using Maven to implement all the needed dependancies, such as JDA (Java API handler for Discord)."
-                  desc2="For personal use please read the given Documentation within the repo. This gives a brief overlook and implementation guide."
+                  <ProjectSection name={this.state.langFromParent.projects[3][0].data}
+                  desc1={this.state.langFromParent.projects[3][1].data}
+                  desc2={this.state.langFromParent.projects[3][2].data}
                   github="Social-Bot"/>
 
-                  <ProjectSection name="Web Scraper"
-                  desc1="Web Scraper built using NodeJS, uses CLI and integrates directly with Discord 3rd Party Amazon alert server."
-                  desc2="Initially built during the Covid-19 GPU shortage, meaning direct use of Discord API for 're-stocking' alerts. Can also be used directly for scraping and purchasing any product on Amazon."
+                  <ProjectSection name={this.state.langFromParent.projects[4][0].data}
+                  desc1={this.state.langFromParent.projects[4][1].data}
+                  desc2={this.state.langFromParent.projects[4][2].data}
                   github="Scraper"/>
 
-                  <ProjectSection name="PowerPoint to PDF Converter"
-                  desc1="Java application based on converting any valid PowerPoint to a full PDF. Done by using the Aspose API for converting files. The UI is handled by Java with the use of the JFrame framework."
-                  desc2="The application has OS selections depending on Thread usage. Meaning the program can be used efficiently on most systems."
+                  <ProjectSection name={this.state.langFromParent.projects[5][0].data}
+                  desc1={this.state.langFromParent.projects[5][1].data}
+                  desc2={this.state.langFromParent.projects[5][2].data}
                   github="PPTtoPDF"/>
 
-                  <ProjectSection name="Virtual Reality - Unity Project"
-                  desc1="VR Immersive environment built using Unity and the Oculus SDK. Used to create an intutive and immersive learning experience and to demonstrate learning improvements compared to current state of learning. Built using C# and contains assets from Blender and the Unity asset store."
-                  desc2="Built as 3rd year university project and used within final year dissertation. Github repo contains all source code - .gitignore is used to reduce clutter - project can be exported to .exe format."
+                  <ProjectSection name={this.state.langFromParent.projects[6][0].data}
+                  desc1={this.state.langFromParent.projects[6][1].data}
+                  desc2={this.state.langFromParent.projects[6][2].data}
                   github="LearningVR"/>
 
                   </div>
@@ -212,12 +220,12 @@ render(){
             </section>
 
             <section class="contact section" id="contact">
-                <h2 class="section-title">Contact Me</h2>
+                <h2 class="section-title">{this.state.langFromParent.contact.title}</h2>
 
                 <div class="contact__container bd-grid">
                   <div class="email__container">
                     <a href="mailto:kieran.hughes2@live.co.uk" class="email__link"><i class='bx bx-mail-send bx-md email__icon'></i><h3 class="email__text">Kieran.hughes2@live.co.uk</h3>
-                    <input type="button" value="Send an E-mail!" class="email__button button"/></a>
+                    <input type="button" value={this.state.langFromParent.contact.button} class="email__button button"/></a>
                   </div>
                 </div>
             </section>

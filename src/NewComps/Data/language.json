@@ -1,0 +1,122 @@
+{
+  "header": [
+    {
+      "data": "Home"
+    },
+    {
+      "data": "About"
+    },
+    {
+      "data": "Skills"
+    },
+    {
+      "data": "Projects"
+    },
+    {
+      "data": "Contact"
+    }
+  ],
+  "main": {
+    "intro": {
+      "welcome": "Hi",
+      "prename": "I'm",
+      "postname": "",
+      "dev": "Graduate Software Developer",
+      "contact": "Contact"
+    },
+    "about": {
+        "title": "About",
+        "name": "I'm Kieran",
+        "desc1": "I'm an avid software developer and have recently graduated from Bangor University with a BSc in Computer Science.",
+        "desc2": "As seen below within skills and projects, the work I've conducted has not all been within the constraints of University. Some projects I have completed are based on either hobby or skill developing applications."
+
+    },
+    "skills": {
+        "title": "Skills",
+        "name": "Development Skills",
+        "desc1": "Within my Degree study, the main scope within learning was using Object Oritentated Programming. This is where my developed skills for languages such as Java, C, C# and C++ come from. Due to this my favoured form of programming is within OOP and developing applications based around this paradigm. I have also honed similar skills by spending time on 'side-projects', either creating standalone applications using JavaScript (NodeJS) or Python, or by creating websites such as this by using technologies such as a React.js.",
+        "desc2": "I also have experience within areas such as Data Management, by developing and maintaining Databases within MySQL. This is mainly attached to work that was conducted during my degree, but has enabled me to use platforms such as XAMPP to host local applications through Apache (Web) front-end and MySQL (Database) back-end, for a full-stack experience.",
+        "desc3": "Below is a Skill-Chart that represents my strength within each language and experience derived from previous projects."
+    },
+    "projects": [
+      [
+        {"title":"Projects"}
+      ],
+      [
+        {
+          "data": "NHS Location Finder"
+        },
+        {
+          "data": "Java based application to return all NHS Registered Facilities within a given radius. Built using JFRame, Apache POI-HSSF and packaged using Maven."
+        },
+        {
+          "data": "Due to packaged nature of application, please use Maven or similar dependancy manager to import all necessary libraries. Program is set as JAR export for future reference"
+        }
+      ],
+      [
+        {
+          "data": "Crime Rate Checker - Police API"
+        },
+        {
+          "data": "React based website which displays crime statistics from the UK Police API for a given area."
+        },
+        {
+          "data": "Uses REST API methods for retrieving data from API, and parses all collected data for dynamic use within the website."
+        }
+      ],
+      [
+        {
+          "data": "Discord Social Bot"
+        },
+        {
+          "data": "This Discord bot is built using Java and implementes the Discord API. This application is built using Maven to implement all the needed dependancies, such as JDA (Java API handler for Discord)."
+        },
+        {
+          "data": "For personal use please read the given Documentation within the repo. This gives a brief overlook and implementation guide."
+        }
+      ],
+      [
+        {
+          "data": "Web Scraper"
+        },
+        {
+          "data": "Web Scraper built using NodeJS, uses CLI and integrates directly with Discord 3rd Party Amazon alert server."
+        },
+        {
+          "data": "Initially built during the Covid-19 GPU shortage, meaning direct use of Discord API for 're-stocking' alerts. Can also be used directly for scraping and purchasing any product on Amazon."
+        }
+      ],
+      [
+        {
+          "data": "PowerPoint to PDF Converter"
+        },
+        {
+          "data": "Java application based on converting any valid PowerPoint to a full PDF. Done by using the Aspose API for converting files. The UI is handled by Java with the use of the JFrame framework."
+        },
+        {
+          "data": "The application has OS selections depending on Thread usage. Meaning the program can be used efficiently on most systems."
+        }
+      ],
+      [
+        {
+          "data": "Virtual Reality - Unity Project"
+        },
+        {
+          "data": "VR Immersive environment built using Unity and the Oculus SDK. Used to create an intutive and immersive learning experience and to demonstrate learning improvements compared to current state of learning. Built using C# and contains assets from Blender and the Unity asset store."
+        },
+        {
+          "data": "Built as 3rd year university project and used within final year dissertation. Github repo contains all source code - .gitignore is used to reduce clutter - project can be exported to .exe format."
+        }
+      ]
+    ],
+    "contact": {
+
+        "title": "Contact Me",
+        "button": "Send an E-Mail!"
+
+    }
+  },
+  "footer": {
+    "copyright": "&#169; 2021 copyright all right reserved"
+  }
+}

@@ -11,7 +11,7 @@
     --second-color: #0E2431;
     --back-color: #fff;
     --burger-menu-color: #3C3F58;
-    
+
 }
 
 /*===== Fuente y tipografia =====*/
@@ -217,6 +217,13 @@ img{
     }
 }
 
+.translate__icon{
+  color: var(--second-color);
+  &:hover{
+    color: var(--first-color);
+    cursor: pointer;
+  }
+}
 
 .active::after{
     position: absolute;

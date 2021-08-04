@@ -3,10 +3,24 @@ import React from 'react';
 
 import './HeaderNav.scss';
 
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import { faGlobeEurope } from '@fortawesome/free-solid-svg-icons'
+
 class HeaderNav extends React.Component{
+
+  constructor(props)
+  {
+    super(props);
+    this.state = {
+      lang: '',
+      langFromParent: this.props.language
+    }
+    //console.log("lang" + this.state.langFromParent);
+  }
 
 //--- running vanilla JS to create mobile-nav bar ---
 componentDidMount(){
+
   /*===== MENU SHOW =====*/
   const showMenu = (toggleId, navId) =>{
       const toggle = document.getElementById(toggleId),
@@ -64,7 +78,13 @@ componentDidMount(){
   }
 
   changeToggle();
+
 }
+
+componentDidUpdate(){
+  this.state.langFromParent = this.props.language;
+}
+
 
 
 render(){
@@ -77,11 +97,11 @@ render(){
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                        <li class="nav__item"><a href="#home" class="nav__link active">{this.state.langFromParent[0].data}</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">{this.state.langFromParent[1].data}</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">{this.state.langFromParent[2].data}</a></li>
+                        <li class="nav__item"><a href="#projects" class="nav__link">{this.state.langFromParent[3].data}</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">{this.state.langFromParent[4].data}</a></li>
                     </ul>
                 </div>
                 <div class="nav__icons" id="nav-icons">
@@ -94,6 +114,12 @@ render(){
                 <div class="nav__dark" id="dark-toggle" onclick="changeToggle()">
                   <i class="bx bx-moon" id="darkmodeToggle"></i>
                 </div>
+
+                <div className="nav__icons">
+                  <FontAwesomeIcon icon={faGlobeEurope} className="translate__icon" onClick={this.props.handleSetLanguage}/>
+                </div>
+
+
                 <div class="nav__toggle" id="nav-toggle">
                     <i class='bx bx-menu'></i>
                 </div>
