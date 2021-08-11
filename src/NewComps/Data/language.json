@@ -40,7 +40,10 @@
     },
     "projects": [
       [
-        {"title":"Projects"}
+        {
+          "title":"Projects",
+          "brief":"Brief Desc:"
+        }
       ],
       [
         {

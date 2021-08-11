@@ -17,14 +17,14 @@ class ProjectSection extends React.Component{
   render(){
     return(
       <a href={this.state.github} class="project__clickable">
-        <div class="project__area" id={this.state.name}>
+        <div class="project__area" id={this.props.name}>
           <div class="project__header">
-            <h2 class="project__title">{this.state.name}</h2>
+            <h2 class="project__title">{this.props.name}</h2>
           </div>
           <div class="project__info">
-          <p class="project__subtitle">Brief Desc:</p>
-          <p class="project__desc">{this.state.firstDesc}
-          <br></br><br></br> {this.state.secondDesc}
+          <p class="project__subtitle">{this.props.brief}</p>
+          <p class="project__desc">{this.props.desc1}
+          <br></br><br></br> {this.props.desc2}
           </p>
           </div>
           <div class="burger">

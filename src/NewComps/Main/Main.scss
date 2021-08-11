@@ -1,4 +1,5 @@
 @use "../../Styles/coloring" as *;
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 
 :root{
     --first-color: #4070F4;
@@ -15,6 +16,7 @@ body{
     font-size: var(--normal-font-size);
     color: var(--second-color);
     background-color: var(--back-color);
+    transition: 0.5s;
 }
 
 .dark-mode{
@@ -25,7 +27,7 @@ body{
 
   --icon-filter: invert(96%) sepia(4%) saturate(1612%) hue-rotate(184deg) brightness(93%) contrast(91%);
 
-  transition: 0.5s;
+  //transition: 0.5s;
 }
 
 img{
@@ -91,9 +93,9 @@ img{
     padding: .75rem 2.5rem;
     font-weight: var(--font-semi);
     border-radius: .5rem;
-
     &:hover{
         box-shadow: 0px 10px 36px rgba(0,0,0,.15);
+
     }
 }
 
@@ -222,8 +224,9 @@ img{
 .project{
 
   &__area:hover{
-    transition: 1.4s;
+    //transition: 1.4s;
     box-shadow: 0 1px 20px rgba(146,161,176,.15);
+    border: 1px solid var(--first-color);
   }
 
 
@@ -329,6 +332,8 @@ img{
   row-gap: 2rem;
   margin: 0 auto 100px;
   box-shadow: 0 1px 4px rgba(146,161,176,.15);
+  border: 1px solid transparent;
+  transition: 1.4s !important;
   //position: relative;
 
   cursor: default;
@@ -388,17 +393,51 @@ img{
       width: 40%;
       margin: 0 auto 100px;
       box-shadow: 0 1px 4px rgba(146,161,176,.15);
+      border: 1px solid transparent;
+      transition: 1.4s;
       @media screen and (max-width: 768px){
-          width: 55%;
+          width: 60%;
       }
     }
 
+    &__container:hover{
+      border: 1px solid var(--first-color);
+    }
+
     &__text{
-      font-size: 1.2rem;
+      font-size: clamp(1rem, 3vw + 1rem, 1.2rem);
       position: relative;
+      width: max-content;
+      left: 15%;
+      //font-family: monospace;
+      //text-align: center;
       top: 30px;
-      padding: 10px;
+      padding-top: 10px;
       cursor: default;
+      @media screen and (max-width: 768px){
+         left: 7%;
+      }
+    }
+    &__text::before,&__text::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+    &__text::before{
+      background: var(--back-color);
+      transition: 0.5s;
+      animation: typewriter 7s steps(25) 1s forwards 2;
+    }
+
+    &__text::after{
+      width: 0.125em;
+      background: var(--second-color);
+      animation: typewriter 7s steps(25) 1s forwards 2,
+        blink 750ms steps(25) 1s infinite;
     }
 
     /*&__text:hover{
@@ -431,6 +470,15 @@ img{
       outline: none;
       font-size: var(--normal-font-size);
       cursor: pointer;
+
+      transition: 0.5s !important;
+
+      &:hover{
+          box-shadow: 0px 10px 36px rgba(0,0,0,.15);
+          background-color: var(--second-color);
+          //transition: 0.5s !important;
+
+      }
       //margin-left: auto;
     }
 
@@ -458,4 +506,24 @@ img{
 ::placeholder{
   color: var(--second-color);
   opacity: 1;
+}
+
+
+//--- animations ---
+@keyframes typewriter{
+  90%, 100%{
+    left: 100%;
+  }
+  0% {
+    left: 100%;
+  }
+  10% {
+    left: 0%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
 }

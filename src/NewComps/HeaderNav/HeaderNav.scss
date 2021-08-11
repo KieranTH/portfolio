@@ -208,10 +208,18 @@ img{
       &:hover{
         color: var(--first-color);
       }
+
     }
 
     &__dark{
       :hover{
+        color: var(--first-color);
+      }
+    }
+
+    &__tool{
+      color: var(--second-color);
+      &:hover{
         color: var(--first-color);
       }
     }
@@ -237,6 +245,11 @@ img{
 
 .show{
     right: 0;
+}
+
+
+.MuiTooltip-popper{
+  color: blue;
 }
 
 

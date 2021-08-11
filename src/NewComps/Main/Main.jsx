@@ -187,31 +187,37 @@ render(){
                   <ProjectSection name={this.props.language.projects[1][0].data}
                   desc1={this.props.language.projects[1][1].data}
                   desc2={this.props.language.projects[1][2].data}
+                  brief={this.props.language.projects[0][0].brief}
                   github="NHSFinder"/>
 
                   <ProjectSection name={this.props.language.projects[2][0].data}
                   desc1={this.props.language.projects[2][1].data}
                   desc2={this.props.language.projects[2][2].data}
+                  brief={this.props.language.projects[0][0].brief}
                   github="policeapi"/>
 
                   <ProjectSection name={this.props.language.projects[3][0].data}
                   desc1={this.props.language.projects[3][1].data}
                   desc2={this.props.language.projects[3][2].data}
+                  brief={this.props.language.projects[0][0].brief}
                   github="Social-Bot"/>
 
                   <ProjectSection name={this.props.language.projects[4][0].data}
                   desc1={this.props.language.projects[4][1].data}
                   desc2={this.props.language.projects[4][2].data}
+                  brief={this.props.language.projects[0][0].brief}
                   github="Scraper"/>
 
                   <ProjectSection name={this.props.language.projects[5][0].data}
                   desc1={this.props.language.projects[5][1].data}
                   desc2={this.props.language.projects[5][2].data}
+                  brief={this.props.language.projects[0][0].brief}
                   github="PPTtoPDF"/>
 
                   <ProjectSection name={this.props.language.projects[6][0].data}
                   desc1={this.props.language.projects[6][1].data}
                   desc2={this.props.language.projects[6][2].data}
+                  brief={this.props.language.projects[0][0].brief}
                   github="LearningVR"/>
 
                   </div>
@@ -224,7 +230,7 @@ render(){
 
                 <div class="contact__container bd-grid">
                   <div class="email__container">
-                    <a href="mailto:kieran.hughes2@live.co.uk" class="email__link"><i class='bx bx-mail-send bx-md email__icon'></i><h3 class="email__text">Kieran.hughes2@live.co.uk</h3>
+                    <a href="mailto:kieran.hughes2@live.co.uk" class="email__link"><i class='bx bx-mail-send bx-md email__icon'></i><h3 class="email__text" style={{animation: 'typewriter 1s'}}>Kieran.hughes2@live.co.uk</h3>
                     <input type="button" value={this.props.language.contact.button} class="email__button button"/></a>
                   </div>
                 </div>
